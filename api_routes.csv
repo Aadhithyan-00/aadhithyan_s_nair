@@ -1,0 +1,6 @@
+Method,Endpoint,Description,Parameters,Response
+POST,/api/tasks,Create a new task,"{""title"": ""string (required)"", ""description"": ""string (optional)"", ""status"": ""Pending/Completed (optional)""}",201 Created
+GET,/api/tasks,Get all tasks with optional filtering,?status=Pending/Completed&search=keyword,200 OK
+GET,/api/tasks/:id,Get a specific task by ID,ID in URL,200 OK
+PUT,/api/tasks/:id,Update a task,"{""title"": ""string"", ""description"": ""string"", ""status"": ""Pending/Completed""}",200 OK
+DELETE,/api/tasks/:id,Delete a specific task,ID in URL,200 OK
